@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>劉亭儀｜履歷 (Resume)</title>
+  <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷" />
+  <style>
+    :root{
+      --bg: #f6f7ff;
+      --bg-accent: radial-gradient(20% 30% at 10% 5%, #ffe4f1 0%, transparent 60%),
+                   radial-gradient(25% 35% at 90% 10%, #e0f2fe 0%, transparent 60%),
+                   radial-gradient(18% 28% at 80% 80%, #ffe7cc 0%, transparent 60%);
+      --card: #ffffff;
+      --text: #111827;
+      --sub: #374151;
+      --muted: #6b7280;
+      --brand: #7c3aed; /* 紫 */
+      --brand2: #2563eb; /* 藍 */
+      --brand3: #ec4899; /* 桃 */
+      --brand-weak: #ede9fe;
+      --line: #e5e7eb;
+      --shadow: 0 10px 30px rgba(17,24,39,.08), 0 2px 6px rgba(17,24,39,.06);
+    }
+    [data-theme="dark"]{
+      --bg:#0a0b16;
+      --bg-accent: radial-gradient(24% 36% at 10% 0%, rgba(96,165,250,.12) 0%, transparent 60%),
+                   radial-gradient(28% 38% at 100% 10%, rgba(236,72,153,.12) 0%, transparent 60%),
+                   radial-gradient(20% 28% at 90% 90%, rgba(124,58,237,.18) 0%, transparent 65%);
+      --card:#0f172a;
+      --text:#e5e7eb;
+      --sub:#cbd5e1;
+      --muted:#94a3b8;
+      --brand:#a78bfa;
+      --brand2:#60a5fa;
+      --brand3:#f472b6;
+      --brand-weak:#1f1442;
+      --line:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
+    }
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6; position:relative; overflow-x:hidden;
+    }
+    /* 背景彩霧 */
+    .bg-orbs{position:fixed; inset:-10% -10% -10% -10%; z-index:-1; pointer-events:none; background:var(--bg-accent);}  
+
+    .container{max-width:1040px;margin:36px auto;padding:0 20px;}
+    .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
+
+    .idcard{
+      display:flex;gap:18px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,.8), rgba(255,255,255,.9));
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border:1px solid var(--line); border-radius:20px; padding:16px 18px; flex:1; box-shadow:var(--shadow);
+      position:relative; overflow:hidden;
+    }
+    .idcard:before{content:""; position:absolute; inset:0; border-radius:20px; padding:1px; background:linear-gradient(120deg, var(--brand), var(--brand2), var(--brand3)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;}
+
+    .avatar{ width:76px; height:76px; border-radius:50%; display:grid; place-items:center; font-weight:800; color:var(--brand2);
+      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow); }
+    .avatar:before{content:""; position:absolute; inset:-4px; border-radius:inherit; background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand)); z-index:-1; animation:spin 6s linear infinite;}
+    .avatar span{background:linear-gradient(90deg, var(--brand), var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:1.1rem}
+
+    @keyframes spin{to{transform:rotate(1turn)}}
+
+    .name{font-size:1.7rem;font-weight:900;margin:0; letter-spacing:.5px; background:linear-gradient(90deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+    .role{margin:4px 0 0;font-size:.98rem;color:var(--muted)}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .tag{font-size:.86rem;padding:6px 12px;border-radius:999px; background:linear-gradient(120deg, var(--brand-weak), #e0f2fe); color:#111; border:1px solid var(--line); box-shadow:0 2px 6px rgba(0,0,0,.05)}
+
+    .actions{display:flex;gap:10px;}
+    .btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--text); padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700; box-shadow:var(--shadow); position:relative; overflow:hidden}
+    .btn.primary{background:linear-gradient(120deg,var(--brand),var(--brand2));border-color:transparent;color:white}
+    .btn.ghost{background:transparent}
+    .btn:active{transform:translateY(1px)}
+    .btn:before{content:""; position:absolute; inset:0; background:radial-gradient(120px 120px at var(--x,50%) var(--y,50%), rgba(255,255,255,.25), transparent 60%); opacity:0; transition:opacity .3s}
+    .btn:hover:before{opacity:1}
+
+    .ribbon{height:6px; width:100%; background:linear-gradient(90deg, var(--brand), var(--brand2), var(--brand3), var(--brand)); border-radius:999px; filter:saturate(1.1); margin:8px 0 22px}
+
+    .grid{display:grid;grid-template-columns:330px 1fr;gap:24px}
+    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
+
+    aside, main{background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow)}
+    aside{padding:22px}
+    main{padding:22px}
+
+    h2{margin:0 0 14px; font-size:1.18rem; padding-bottom:10px; position:relative}
+    h2:after{content:""; position:absolute; left:0; bottom:0; width:160px; height:4px; border-radius:999px; background:linear-gradient(90deg, var(--brand), var(--brand2), var(--brand3)); opacity:.8}
+    h3{margin:.6em 0 .2em;font-size:1.02rem}
+    p{margin:.35em 0}
+    .row{display:flex;justify-content:space-between;gap:10px}
+
+    .pill{display:inline-block; background:linear-gradient(120deg, #f5f3ff, #e0e7ff, #ffe4f1); border:1px solid var(--line); color:#111; border-radius:999px; padding:6px 12px; margin:6px 8px 0 0; font-size:.86rem; box-shadow:0 6px 18px rgba(17,24,39,.06); transform:translateZ(0)}
+    .pill:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(17,24,39,.10)}
+
+    ul{padding-left:18px;margin:.4em 0}
+    li{margin:.3em 0}
+
+    .item{padding:12px 0 14px; border-bottom:1px dashed var(--line); position:relative}
+    .item:last-child{border-bottom:0}
+    .item:before{content:""; position:absolute; left:-12px; top:16px; width:8px; height:8px; border-radius:50%; background:linear-gradient(120deg, var(--brand), var(--brand2)); box-shadow:0 0 0 3px rgba(124,58,237,.15)}
+    .when{font-size:.86rem;color:var(--muted)}
+    .link{color:var(--brand2);text-decoration:none}
+
+    .kvs{display:grid;grid-template-columns:120px 1fr;gap:10px;font-size:.96rem}
+    .kvs div{padding:6px 0;border-bottom:1px dashed var(--line)}
+    .kvs div:nth-child(odd){color:var(--muted)}
+
+    footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem}
+
+    /* 列印優化：移除陰影、背景漸層，保持可讀性 */
+    @media print{
+      body{background:white}
+      .bg-orbs, .actions, .avatar:before, .ribbon{display:none}
+      .container{margin:0;padding:0}
+      .grid{grid-template-columns:1fr 2fr;gap:12px}
+      aside,main{box-shadow:none;border-color:#ddd}
+      a.link{color:#000;text-decoration:underline}
+      h2:after{background:#000; opacity:.2}
+    }
+
+    /* 無障礙：減少動態 */
+    @media (prefers-reduced-motion: reduce){
+      .avatar:before{animation:none}
+      .pill:hover{transform:none}
+    }
+  </style>
+</head>
+<body data-theme="light" itemscope itemtype="https://schema.org/Person">
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <div class="container">
+  <div class="container">
+    <header class="header">
+      <section class="idcard">
+        <div class="avatar" aria-hidden="true"><span>TY</span></div>
+        <div>
+          <h1 class="name" itemprop="name">劉亭儀</h1>
+          <p class="role"><span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong></p>
+          <div class="meta">
+            <a class="tag" itemprop="email" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a>
+            <span class="tag" itemprop="affiliation">亞洲大學心理學系</span>
+            <span class="tag">Taiwan</span>
+          </div>
+        </div>
+      </section>
+      <div class="actions">
+        <button class="btn" id="themeBtn" title="切換深淺色">🌗 主題</button>
+        <button class="btn ghost" id="copyEmailBtn" title="複製信箱">📧 複製信箱</button>
+        <button class="btn primary" onclick="window.print()" title="列印或匯出 PDF">🖨️ 匯出PDF</button>
+      </div>
+    </header>
+    <div class="ribbon" aria-hidden="true"></div>
+
+    <section class="grid">
+      <!-- 側欄 -->
+      <aside>
+        <h2>簡介 Summary</h2>
+        <p itemprop="description">對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。</p>
+
+        <h2>聯絡 Contact</h2>
+        <div class="kvs">
+          <div>學號</div><div>113014056</div>
+          <div>Email</div><div><a class="link" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a></div>
+          <div>系所</div><div>亞洲大學 心理學系</div>
+          <div>所在地</div><div>台中｜台灣</div>
+        </div>
+
+        <h2>技能 Skills</h2>
+        <div>
+          <span class="pill">基礎統計 (Statistics)</span>
+          <span class="pill">研究法 (Research Methods)</span>
+          <span class="pill">R / Excel（基礎）</span>
+          <span class="pill">資料整理 & 視覺化</span>
+          <span class="pill">中英翻譯（學術 / 科普）</span>
+          <span class="pill">簡報設計</span>
+        </div>
+
+        <h2>語言 Languages</h2>
+        <p>中文（母語）、英文（中高階）</p>
+
+        <h2>興趣 Interests</h2>
+        <p>社會認知、情緒與大腦、學習心理、科普寫作、教育設計</p>
+      </aside>
+
+      <!-- 內容主欄 -->
+      <main>
+        <section>
+          <h2>學歷 Education</h2>
+          <div class="item">
+            <div class="row">
+              <h3>亞洲大學｜心理學系 B.S.</h3>
+              <div class="when">2024 — 至今</div>
+            </div>
+            <p>核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>學術 / 專題 Projects</h2>
+          <div class="item">
+            <div class="row">
+              <h3>社會認知偏誤科普圖文</h3>
+              <div class="when">2025</div>
+            </div>
+            <ul>
+              <li>以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。</li>
+              <li>建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="row">
+              <h3>心理學小型測驗設計（團隊合作）</h3>
+              <div class="when">2025</div>
+            </div>
+            <ul>
+              <li>嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>經驗 Experience</h2>
+          <div class="item">
+            <div class="row">
+              <h3>學習助理（志工）｜心理學入門</h3>
+              <div class="when">2025</div>
+            </div>
+            <ul>
+              <li>協助課內學弟妹複習重點、製作導學單張與簡報模板。</li>
+              <li>以淺白比喻與小實驗提高理解度與參與度。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>課外與證書 Activities & Certificates</h2>
+          <ul>
+            <li>學術英文寫作工作坊（校內）</li>
+            <li>資料視覺化工作坊（入門）</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>可提供的合作 Collaboration</h2>
+          <ul>
+            <li>心理學概念的通俗化寫作與編修</li>
+            <li>基本資料整理、圖表製作與海報初稿</li>
+            <li>課堂活動設計（國高中與大學入門）</li>
+          </ul>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <footer class="container">
+    <p>© <span id="year"></span> 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。</p>
+  </footer>
+
+  <script>
+    // 年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 主題切換（記憶於 localStorage）
+    const root = document.body;
+    const themeBtn = document.getElementById('themeBtn');
+    const saved = localStorage.getItem('theme');
+    if(saved){ root.setAttribute('data-theme', saved); }
+    themeBtn.addEventListener('click', ()=>{
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // 複製信箱
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    copyEmailBtn.addEventListener('click', async () => {
+      const email = 'tingyiliu07@gmail.com';
+      try{
+        await navigator.clipboard.writeText(email);
+        copyEmailBtn.textContent = '✅ 已複製';
+        setTimeout(()=> copyEmailBtn.textContent = '📧 複製信箱', 1600);
+      }catch(err){
+        alert('無法複製，請手動選取：' + email);
+      }
+    });
+      
+  </script>
+  <script>
+    // 互動燦花：複製成功時撒花
+    const burst = (x, y) => {
+      const c = document.createElement('canvas');
+      const dpr = window.devicePixelRatio || 1;
+      c.width = innerWidth * dpr; c.height = innerHeight * dpr; c.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:99';
+      document.body.appendChild(c);
+      const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
+      const parts = Array.from({length: 60}, (_,i)=>({
+        x, y,
+        r: Math.random()*4+2,
+        a: 1,
+        vx: (Math.random()-0.5)*6,
+        vy: (Math.random()-0.8)*8-4,
+        color: `hsl(${Math.random()*360},85%,60%)`
+      }));
+      const tick = () => {
+        ctx.clearRect(0,0,innerWidth,innerHeight);
+        parts.forEach(p=>{
+          p.x += p.vx; p.y += p.vy; p.vy += 0.15; p.a -= 0.015;
+          ctx.globalAlpha = Math.max(p.a,0);
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fillStyle = p.color; ctx.fill();
+        });
+        if(parts.some(p=>p.a>0)) requestAnimationFrame(tick); else c.remove();
+      };
+      tick();
+    };
+
+    copyEmailBtn.addEventListener('click', (e)=>{
+      const rect = e.currentTarget.getBoundingClientRect();
+      burst(rect.left + rect.width/2, rect.top + rect.height/2);
+    });
+
+    // 滑鼠光暈效果（按鈕）
+    document.querySelectorAll('.btn').forEach(btn=>{
+      btn.addEventListener('pointermove', e=>{
+        const r = e.currentTarget.getBoundingClientRect();
+        e.currentTarget.style.setProperty('--x', `${e.clientX - r.left}px`);
+        e.currentTarget.style.setProperty('--y', `${e.clientY - r.top}px`);
+      });
+    });
+  </script>
+</body>
+</html>

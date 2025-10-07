@@ -64,20 +64,11 @@
       display:grid; place-items:center; font-weight:800; color:var(--brand2);
       position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow);
     }
-    .avatar img{
-  width:100%;
-  height:100%;
-  border-radius:inherit;  /* 跟外框一樣圓角 → 正圓 */
-  object-fit:cover;       /* 填滿不變形 */
-  display:block;
-}
-
     .avatar:before{
       content:""; position:absolute; inset:-4px; border-radius:inherit;
       background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand));
       z-index:-1; animation:spin 6s linear infinite;
     }
-    /* 讓 <img> 乖乖填滿圓形頭像 */
     .avatar img{
       width:100%;
       height:100%;
@@ -132,9 +123,28 @@
     .kvs div{padding:6px 0;border-bottom:1px dashed var(--line)}
     .kvs div:nth-child(odd){color:var(--muted)}
 
+    /* 單張照片樣式 */
+    .figure{ margin:14px 0 18px; text-align:center; }
+    .figure img{
+      max-width:100%;
+      height:auto;
+      border-radius:12px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .figure figcaption{
+      font-size:.9rem;
+      color:var(--muted);
+      margin-top:6px;
+    }
+    .figure-missing{
+      text-align:center; padding:18px; border:1px dashed var(--line); border-radius:12px; color:var(--muted);
+      background:linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.85));
+    }
+
     footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem}
 
-    /* 列印優化：移除陰影、背景漸層，保持可讀性 */
+    /* 列印優化 */
     @media print{
       body{background:white}
       .bg-orbs, .actions, .avatar:before, .ribbon{display:none}
@@ -158,6 +168,7 @@
     <header class="header">
       <section class="idcard">
         <div class="avatar">
+          <!-- 頭像：固定使用你已存在的 catpng.jpg -->
           <img src="img/catpng.jpg" alt="劉亭儀 頭像" loading="lazy" decoding="async">
         </div>
         <div>
@@ -246,6 +257,21 @@
           </div>
         </section>
 
+        <!-- 相片區塊（含備援機制） -->
+        <section>
+          <h2>相片 Photo</h2>
+          <figure class="figure">
+            <img
+              src="img/cat2png.jpg"
+              alt="貓咪按讚的照片"
+              loading="lazy"
+              decoding="async"
+              onerror="photoFallback(this)"
+            >
+            <figcaption>今天也加油 👍</figcaption>
+          </figure>
+        </section>
+
         <section>
           <h2>經驗 Experience</h2>
           <div class="item">
@@ -312,7 +338,21 @@
         alert('無法複製，請手動選取：' + email);
       }
     });
+
+    // 相片備援：cat2png.jpg 載入失敗 → 改用 catpng.jpg；再失敗 → 顯示文字
+    function photoFallback(img){
+      if(!img.dataset.fallbackTried){
+        img.dataset.fallbackTried = '1';
+        img.src = 'img/catpng.jpg';
+      }else{
+        const holder = document.createElement('div');
+        holder.className = 'figure-missing';
+        holder.textContent = '（找不到相片）';
+        img.replaceWith(holder);
+      }
+    }
   </script>
+
   <script>
     // 互動燦花：複製成功時撒花
     const burst = (x, y) => {
@@ -357,4 +397,6 @@
   </script>
 </body>
 </html>
+
+
 

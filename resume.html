@@ -59,10 +59,32 @@
     .idcard:before{content:""; position:absolute; inset:0; border-radius:20px; padding:1px; background:linear-gradient(120deg, var(--brand), var(--brand2), var(--brand3)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
       -webkit-mask-composite: xor; mask-composite: exclude;}
 
-    .avatar{ width:76px; height:76px; border-radius:50%; display:grid; place-items:center; font-weight:800; color:var(--brand2);
-      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow); }
-    .avatar:before{content:""; position:absolute; inset:-4px; border-radius:inherit; background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand)); z-index:-1; animation:spin 6s linear infinite;}
-    .avatar span{background:linear-gradient(90deg, var(--brand), var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:1.1rem}
+    .avatar{
+      width:76px; height:76px; border-radius:50%;
+      display:grid; place-items:center; font-weight:800; color:var(--brand2);
+      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow);
+    }
+    .avatar img{
+  width:100%;
+  height:100%;
+  border-radius:inherit;  /* 跟外框一樣圓角 → 正圓 */
+  object-fit:cover;       /* 填滿不變形 */
+  display:block;
+}
+
+    .avatar:before{
+      content:""; position:absolute; inset:-4px; border-radius:inherit;
+      background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand));
+      z-index:-1; animation:spin 6s linear infinite;
+    }
+    /* 讓 <img> 乖乖填滿圓形頭像 */
+    .avatar img{
+      width:100%;
+      height:100%;
+      border-radius:inherit;  /* 與容器同圓角 → 正圓 */
+      object-fit:cover;       /* 填滿不變形 */
+      display:block;
+    }
 
     @keyframes spin{to{transform:rotate(1turn)}}
 
@@ -133,10 +155,11 @@
 <body data-theme="light" itemscope itemtype="https://schema.org/Person">
   <div class="bg-orbs" aria-hidden="true"></div>
   <div class="container">
-  <div class="container">
     <header class="header">
       <section class="idcard">
-        <div class="avatar" aria-hidden="true"><span>TY</span></div>
+        <div class="avatar">
+          <img src="img/catpng.jpg" alt="劉亭儀 頭像" loading="lazy" decoding="async">
+        </div>
         <div>
           <h1 class="name" itemprop="name">劉亭儀</h1>
           <p class="role"><span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong></p>
@@ -153,6 +176,7 @@
         <button class="btn primary" onclick="window.print()" title="列印或匯出 PDF">🖨️ 匯出PDF</button>
       </div>
     </header>
+
     <div class="ribbon" aria-hidden="true"></div>
 
     <section class="grid">
@@ -288,7 +312,6 @@
         alert('無法複製，請手動選取：' + email);
       }
     });
-      
   </script>
   <script>
     // 互動燦花：複製成功時撒花
@@ -334,3 +357,4 @@
   </script>
 </body>
 </html>
+

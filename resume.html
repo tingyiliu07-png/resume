@@ -7,36 +7,22 @@
   <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷" />
   <style>
     :root{
-      --bg: #f6f7ff;
+      --bg:#f6f7ff;
       --bg-accent: radial-gradient(20% 30% at 10% 5%, #ffe4f1 0%, transparent 60%),
                    radial-gradient(25% 35% at 90% 10%, #e0f2fe 0%, transparent 60%),
                    radial-gradient(18% 28% at 80% 80%, #ffe7cc 0%, transparent 60%);
-      --card: #ffffff;
-      --text: #111827;
-      --sub: #374151;
-      --muted: #6b7280;
-      --brand: #7c3aed;  /* 紫 */
-      --brand2:#2563eb;  /* 藍 */
-      --brand3:#ec4899;  /* 桃 */
-      --brand-weak:#ede9fe;
-      --line:#e5e7eb;
-      --shadow: 0 10px 30px rgba(17,24,39,.08), 0 2px 6px rgba(17,24,39,.06);
+      --card:#ffffff; --text:#111827; --sub:#374151; --muted:#6b7280;
+      --brand:#7c3aed; --brand2:#2563eb; --brand3:#ec4899; --brand-weak:#ede9fe;
+      --line:#e5e7eb; --shadow:0 10px 30px rgba(17,24,39,.08), 0 2px 6px rgba(17,24,39,.06);
     }
     [data-theme="dark"]{
       --bg:#0a0b16;
       --bg-accent: radial-gradient(24% 36% at 10% 0%, rgba(96,165,250,.12) 0%, transparent 60%),
                    radial-gradient(28% 38% at 100% 10%, rgba(236,72,153,.12) 0%, transparent 60%),
                    radial-gradient(20% 28% at 90% 90%, rgba(124,58,237,.18) 0%, transparent 65%);
-      --card:#0f172a;
-      --text:#e5e7eb;
-      --sub:#cbd5e1;
-      --muted:#94a3b8;
-      --brand:#a78bfa;
-      --brand2:#60a5fa;
-      --brand3:#f472b6;
-      --brand-weak:#1f1442;
-      --line:#1f2a44;
-      --shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
+      --card:#0f172a; --text:#e5e7eb; --sub:#cbd5e1; --muted:#94a3b8;
+      --brand:#a78bfa; --brand2:#60a5fa; --brand3:#f472b6; --brand-weak:#1f1442;
+      --line:#1f2a44; --shadow:0 10px 30px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
     }
     html,body{height:100%}
     body{
@@ -45,7 +31,6 @@
       line-height:1.6; position:relative; overflow-x:hidden;
     }
     .bg-orbs{position:fixed; inset:-10% -10% -10% -10%; z-index:-1; pointer-events:none; background:var(--bg-accent);}
-
     .container{max-width:1040px;margin:36px auto;padding:0 20px;}
     .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
 
@@ -62,22 +47,19 @@
       -webkit-mask-composite:xor; mask-composite:exclude;
     }
 
-    /* 頭像樣式（含彩色外圈與裁切） */
+    /* 頭像 */
     .avatar{
       width:90px; height:90px; border-radius:50%;
-      display:grid; place-items:center;
-      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow);
-      overflow:hidden;
+      display:grid; place-items:center; font-weight:800; color:var(--brand2);
+      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow); overflow:hidden;
     }
     .avatar:before{
       content:""; position:absolute; inset:-4px; border-radius:inherit;
       background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand));
       z-index:-1; animation:spin 6s linear infinite;
     }
-    .avatar img{
-      width:100%; height:100%;
-      border-radius:inherit; object-fit:cover; display:block;
-    }
+    .avatar img{ width:100%; height:100%; border-radius:inherit; object-fit:cover; display:block; }
+
     @keyframes spin{to{transform:rotate(1turn)}}
 
     .name{font-size:1.7rem;font-weight:900;margin:0; letter-spacing:.5px; background:linear-gradient(90deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent}
@@ -108,7 +90,7 @@
     p{margin:.35em 0}
     .row{display:flex;justify-content:space-between;gap:10px}
 
-    .pill{display:inline-block; background:linear-gradient(120deg, #f5f3ff, #e0e7ff, #ffe4f1); border:1px solid var(--line); color:#111; border-radius:999px; padding:6px 12px; margin:6px 8px 0 0; font-size:.86rem; box-shadow:0 6px 18px rgba(17,24,39,.06)}
+    .pill{display:inline-block; background:linear-gradient(120deg, #f5f3ff, #e0e7ff, #ffe4f1); border:1px solid var(--line); color:#111; border-radius:999px; padding:6px 12px; margin:6px 8px 0 0; font-size:.86rem; box-shadow:0 6px 18px rgba(17,24,39,.06); transform:translateZ(0)}
     .pill:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(17,24,39,.10)}
 
     ul{padding-left:18px;margin:.4em 0}
@@ -126,15 +108,31 @@
 
     footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem}
 
+    /* 角落裝飾：貓咪按讚貼紙 */
+    .sticker{
+      position: fixed;
+      right: 14px; bottom: 14px;
+      width: 120px; max-width: 32vw;
+      transform: rotate(-8deg);
+      z-index: 10;
+      filter: drop-shadow(0 10px 25px rgba(0,0,0,.18));
+      pointer-events: none;
+      opacity: .95;
+    }
+    [data-theme="dark"] .sticker{ opacity:.88; }
+    .sticker img{ width:100%; height:auto; border-radius:14px; border:1px solid var(--line); display:block; }
+
+    /* 列印優化 */
     @media print{
       body{background:white}
-      .bg-orbs, .actions, .avatar:before, .ribbon{display:none}
+      .bg-orbs, .actions, .avatar:before, .ribbon, .sticker{display:none}
       .container{margin:0;padding:0}
       .grid{grid-template-columns:1fr 2fr;gap:12px}
       aside,main{box-shadow:none;border-color:#ddd}
       a.link{color:#000;text-decoration:underline}
       h2:after{background:#000; opacity:.2}
     }
+    /* 無障礙：減少動態 */
     @media (prefers-reduced-motion: reduce){
       .avatar:before{animation:none}
       .pill:hover{transform:none}
@@ -147,8 +145,8 @@
   <div class="container">
     <header class="header">
       <section class="idcard">
-        <!-- ✅ 你的頭像（含備援） -->
         <div class="avatar">
+          <!-- 頭像：主路徑 + 備援 -->
           <img
             src="img/60131023.jpg"
             alt="劉亭儀 大頭照"
@@ -156,13 +154,9 @@
             data-fallback="img/catpng.jpg"
             onerror="fallbackImg(this)">
         </div>
-
         <div>
           <h1 class="name" itemprop="name">劉亭儀</h1>
-          <p class="role">
-            <span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜
-            學號 <strong itemprop="identifier">113014056</strong>
-          </p>
+          <p class="role"><span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong></p>
           <div class="meta">
             <a class="tag" itemprop="email" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a>
             <span class="tag" itemprop="affiliation">亞洲大學心理學系</span>
@@ -191,7 +185,6 @@
           <div>學號</div><div>113014056</div>
           <div>Email</div><div><a class="link" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a></div>
           <div>系所</div><div>亞洲大學 心理學系</div>
-          <div>所在地</div><div>台中｜台灣</div>
         </div>
 
         <h2>技能 Skills</h2>
@@ -206,9 +199,12 @@
 
         <h2>語言 Languages</h2>
         <p>中文（母語）、英文（中高階）</p>
+
+        <h2>興趣 Interests</h2>
+        <p>社會認知、情緒與大腦、學習心理、科普寫作、教育設計</p>
       </aside>
 
-      <!-- 主欄 -->
+      <!-- 內容主欄 -->
       <main>
         <section>
           <h2>學歷 Education</h2>
@@ -229,7 +225,7 @@
               <div class="when">2025</div>
             </div>
             <ul>
-              <li>以「確認偏誤」與「信念恆存」為主題，設計面向大眾的解說貼文。</li>
+              <li>以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。</li>
               <li>建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。</li>
             </ul>
           </div>
@@ -248,6 +244,23 @@
             </ul>
           </div>
         </section>
+
+        <section>
+          <h2>課外與證書 Activities & Certificates</h2>
+          <ul>
+            <li>學術英文寫作工作坊（校內）</li>
+            <li>資料視覺化工作坊（入門）</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>可提供的合作 Collaboration</h2>
+          <ul>
+            <li>心理學概念的通俗化寫作與編修</li>
+            <li>基本資料整理、圖表製作與海報初稿</li>
+            <li>課堂活動設計（國高中與大學入門）</li>
+          </ul>
+        </section>
       </main>
     </section>
   </div>
@@ -255,6 +268,17 @@
   <footer class="container">
     <p>© <span id="year"></span> 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。</p>
   </footer>
+
+  <!-- 裝飾貼紙：貓咪按讚（純裝飾，對讀屏隱藏） -->
+  <div class="sticker" aria-hidden="true">
+    <img
+      src="img/catpng.jpg"
+      alt="" role="presentation"
+      loading="lazy" decoding="async"
+      data-fallback="img/cat2png.jpg"
+      data-fallback2="catpng.jpg"
+      onerror="fallbackImg(this)">
+  </div>
 
   <script>
     // 年份
@@ -284,25 +308,49 @@
         alert('無法複製，請手動選取：' + email);
       }
     });
-    document.querySelectorAll('.btn').forEach(btn=>{
-      btn.addEventListener('pointermove', e=>{
-        const r = e.currentTarget.getBoundingClientRect();
-        e.currentTarget.style.setProperty('--x', `${e.clientX - r.left}px`);
-        e.currentTarget.style.setProperty('--y', `${e.clientY - r.top}px`);
-      });
+    const burst = (x, y) => {
+      const c = document.createElement('canvas');
+      const dpr = window.devicePixelRatio || 1;
+      c.width = innerWidth * dpr; c.height = innerHeight * dpr; c.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:99';
+      document.body.appendChild(c);
+      const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
+      const parts = Array.from({length: 60}, () => ({
+        x, y, r: Math.random()*4+2, a: 1,
+        vx: (Math.random()-0.5)*6, vy: (Math.random()-0.8)*8-4,
+        color: `hsl(${Math.random()*360},85%,60%)`
+      }));
+      const tick = () => {
+        ctx.clearRect(0,0,innerWidth,innerHeight);
+        parts.forEach(p=>{
+          p.x += p.vx; p.y += p.vy; p.vy += 0.15; p.a -= 0.015;
+          ctx.globalAlpha = Math.max(p.a,0);
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fillStyle = p.color; ctx.fill();
+        });
+        if(parts.some(p=>p.a>0)) requestAnimationFrame(tick); else c.remove();
+      };
+      tick();
+    };
+    copyEmailBtn.addEventListener('click', (e)=>{
+      const r = e.currentTarget.getBoundingClientRect();
+      burst(r.left + r.width/2, r.top + r.height/2);
     });
 
-    // ✅ 圖片備援：若主圖載不到就改載 data-fallback
-    function fallbackImg(img){
-      const fb = img.dataset.fallback;
-      if(!fb) return;
-      // 若連備援也失敗，隱藏圖片避免破圖
-      img.onerror = ()=>{ img.style.display = 'none'; img.alt = (img.alt || '圖片') + '（載入失敗）'; };
-      img.src = fb;
-    }
+    // 通用圖片備援（頭像、貼紙都可用）
+    window.fallbackImg ||= function(img){
+      const tries = +(img.dataset.tries || 0);
+      const list = [img.dataset.fallback, img.dataset.fallback2, img.dataset.fallback3].filter(Boolean);
+      if (tries < list.length){
+        img.dataset.tries = tries + 1;
+        img.src = list[tries];
+      }else{
+        img.style.display = 'none';
+        img.alt = (img.alt || '圖片') + '（載入失敗）';
+      }
+    };
   </script>
 </body>
 </html>
+
 
 
 

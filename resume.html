@@ -3,504 +3,177 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-zh="劉亭儀｜履歷 (Resume)" data-en="Ting-Yi Liu｜Resume">劉亭儀｜履歷 (Resume)</title>
-  <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷" data-zh="劉亭儀｜亞洲大學心理學系｜學生履歷" data-en="Ting-Yi Liu｜Dept. of Psychology, Asia University｜Student resume" />
-  <!-- Open Graph / Twitter 預覽 -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="劉亭儀｜履歷" data-zh="劉亭儀｜履歷" data-en="Ting-Yi Liu｜Resume">
-  <meta property="og:description" content="亞洲大學心理學系｜學生履歷" data-zh="亞洲大學心理學系｜學生履歷" data-en="Dept. of Psychology, Asia University｜Student Resume">
-  <meta property="og:image" content="img/og-image.jpg">
-  <meta property="og:url" content="">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- favicon（可替換檔案） -->
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <title>劉亭儀｜履歷 (Resume)</title>
+  <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷" />
+
+  <!-- 🔍 SEO 與分享預覽 -->
+  <meta property="og:title" content="劉亭儀｜履歷 Resume" />
+  <meta property="og:description" content="亞洲大學心理學系學生 · 心理學與教育設計愛好者" />
+  <meta property="og:image" content="img/60131023.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- 網站圖示 -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <style>
     :root{
-      --bg: #f6f7ff;
-      --bg-accent: radial-gradient(20% 30% at 10% 5%, #ffe4f1 0%, transparent 60%),
-                   radial-gradient(25% 35% at 90% 10%, #e0f2fe 0%, transparent 60%),
-                   radial-gradient(18% 28% at 80% 80%, #ffe7cc 0%, transparent 60%);
-      --card: #ffffff;
-      --text: #111827;
-      --sub: #374151;
-      --muted: #6b7280;
-      --brand: #7c3aed;  /* 紫 */
-      --brand2: #2563eb; /* 藍 */
-      --brand3: #ec4899; /* 桃 */
-      --brand-weak: #ede9fe;
-      --line: #e5e7eb;
-      --shadow: 0 10px 30px rgba(17,24,39,.08), 0 2px 6px rgba(17,24,39,.06);
+      --bg:#f6f7ff;
+      --bg-accent:radial-gradient(20% 30% at 10% 5%,#ffe4f1 0%,transparent 60%),radial-gradient(25% 35% at 90% 10%,#e0f2fe 0%,transparent 60%),radial-gradient(18% 28% at 80% 80%,#ffe7cc 0%,transparent 60%);
+      --card:#fff;
+      --text:#111827;
+      --muted:#6b7280;
+      --brand:#7c3aed;
+      --brand2:#2563eb;
+      --brand3:#ec4899;
+      --line:#e5e7eb;
+      --shadow:0 10px 30px rgba(17,24,39,.08),0 2px 6px rgba(17,24,39,.06);
     }
     [data-theme="dark"]{
       --bg:#0a0b16;
-      --bg-accent: radial-gradient(24% 36% at 10% 0%, rgba(96,165,250,.12) 0%, transparent 60%),
-                   radial-gradient(28% 38% at 100% 10%, rgba(236,72,153,.12) 0%, transparent 60%),
-                   radial-gradient(20% 28% at 90% 90%, rgba(124,58,237,.18) 0%, transparent 65%);
+      --bg-accent:radial-gradient(24% 36% at 10% 0%,rgba(96,165,250,.12) 0%,transparent 60%),radial-gradient(28% 38% at 100% 10%,rgba(236,72,153,.12) 0%,transparent 60%),radial-gradient(20% 28% at 90% 90%,rgba(124,58,237,.18) 0%,transparent 65%);
       --card:#0f172a;
       --text:#e5e7eb;
-      --sub:#cbd5e1;
       --muted:#94a3b8;
       --brand:#a78bfa;
       --brand2:#60a5fa;
       --brand3:#f472b6;
-      --brand-weak:#1f1442;
       --line:#1f2a44;
-      --shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
+      --shadow:0 10px 30px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);
     }
-    html,body{height:100%}
-    body{
-      margin:0; background:var(--bg); color:var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      line-height:1.6; position:relative; overflow-x:hidden;
-    }
-    .bg-orbs{position:fixed; inset:-10% -10% -10% -10%; z-index:-1; pointer-events:none; background:var(--bg-accent);}  
-
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.6;overflow-x:hidden;}
+    .bg-orbs{position:fixed;inset:-10%;z-index:-1;background:var(--bg-accent);}
     .container{max-width:1040px;margin:36px auto;padding:0 20px;}
-    .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
-
-    .idcard{
-      display:flex;gap:18px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,.8), rgba(255,255,255,.9));
-      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-      border:1px solid var(--line); border-radius:20px; padding:16px 18px; flex:1; box-shadow:var(--shadow);
-      position:relative; overflow:hidden;
-    }
-    .idcard:before{content:""; position:absolute; inset:0; border-radius:20px; padding:1px; background:linear-gradient(120deg, var(--brand), var(--brand2), var(--brand3)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude;}
-
-    .avatar{
-      width:90px; height:90px; border-radius:50%;
-      display:grid; place-items:center; font-weight:800; color:var(--brand2);
-      position:relative; isolation:isolate; background:#fff; box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-    .avatar:before{
-      content:""; position:absolute; inset:-4px; border-radius:inherit;
-      background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand));
-      z-index:-1; animation:spin 6s linear infinite;
-    }
-    .avatar img{ width:100%; height:100%; border-radius:inherit; object-fit:cover; display:block; }
-
-    .figure{ margin:14px 0 18px; text-align:center; }
-    .figure img{ max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line); box-shadow:var(--shadow); }
-    .figure figcaption{ font-size:.9rem; color:var(--muted); margin-top:6px; }
-
-    @keyframes spin{to{transform:rotate(1turn)}}
-
-    .name{font-size:1.7rem;font-weight:900;margin:0; letter-spacing:.5px; background:linear-gradient(90deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent}
-    .role{margin:4px 0 0;font-size:.98rem;color:var(--muted)}
-    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .tag{font-size:.86rem;padding:6px 12px;border-radius:999px; background:linear-gradient(120deg, var(--brand-weak), #e0f2fe); color:#111; border:1px solid var(--line); box-shadow:0 2px 6px rgba(0,0,0,.05)}
-
-    .actions{display:flex;gap:10px;flex-wrap:wrap;}
-    .btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--text); padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700; box-shadow:var(--shadow); position:relative; overflow:hidden}
-    .btn.primary{background:linear-gradient(120deg,var(--brand),var(--brand2));border-color:transparent;color:white}
-    .btn.ghost{background:transparent}
-    .btn:active{transform:translateY(1px)}
-    .btn:before{content:""; position:absolute; inset:0; background:radial-gradient(120px 120px at var(--x,50%) var(--y,50%), rgba(255,255,255,.25), transparent 60%); opacity:0; transition:opacity .3s}
-    .btn:hover:before{opacity:1}
-
-    .ribbon{height:6px; width:100%; background:linear-gradient(90deg, var(--brand), var(--brand2), var(--brand3), var(--brand)); border-radius:999px; filter:saturate(1.1); margin:8px 0 22px}
-
-    .grid{display:grid;grid-template-columns:330px 1fr;gap:24px}
-    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
-
-    aside, main{background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow)}
-    aside{padding:22px}
-    main{padding:22px}
-
-    h2{margin:0 0 14px; font-size:1.18rem; padding-bottom:10px; position:relative}
-    h2:after{content:""; position:absolute; left:0; bottom:0; width:160px; height:4px; border-radius:999px; background:linear-gradient(90deg, var(--brand), var(--brand2), var(--brand3)); opacity:.8}
-    h3{margin:.6em 0 .2em;font-size:1.02rem}
-    p{margin:.35em 0}
-    .row{display:flex;justify-content:space-between;gap:10px}
-
-    .pill{display:inline-block; background:linear-gradient(120deg, #f5f3ff, #e0e7ff, #ffe4f1); border:1px solid var(--line); color:#111; border-radius:999px; padding:6px 12px; margin:6px 8px 0 0; font-size:.86rem; box-shadow:0 6px 18px rgba(17,24,39,.06); transform:translateZ(0)}
-    .pill:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(17,24,39,.10)}
-
-    ul{padding-left:18px;margin:.4em 0}
-    li{margin:.3em 0}
-
-    .item{padding:12px 0 14px; border-bottom:1px dashed var(--line); position:relative}
-    .item:last-child{border-bottom:0}
-    .item:before{content:""; position:absolute; left:-12px; top:16px; width:8px; height:8px; border-radius:50%; background:linear-gradient(120deg, var(--brand), var(--brand2)); box-shadow:0 0 0 3px rgba(124,58,237,.15)}
-    .when{font-size:.86rem;color:var(--muted)}
-    .link{color:var(--brand2);text-decoration:none}
-
-    .kvs{display:grid;grid-template-columns:120px 1fr;gap:10px;font-size:.96rem}
-    .kvs div{padding:6px 0;border-bottom:1px dashed var(--line)}
-    .kvs div:nth-child(odd){color:var(--muted)}
-
-    footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem}
-
-    @media print{
-      body{background:white}
-      .bg-orbs, .actions, .avatar:before, .ribbon{display:none}
-      .container{margin:0;padding:0}
-      .grid{grid-template-columns:1fr 2fr;gap:12px}
-      aside,main{box-shadow:none;border-color:#ddd}
-      a.link{color:#000;text-decoration:underline}
-      h2:after{background:#000; opacity:.2}
-    }
-    @media (prefers-reduced-motion: reduce){
-      .avatar:before{animation:none}
-      .pill:hover{transform:none}
-    }
+    .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px;}
+    .idcard{display:flex;gap:18px;align-items:center;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:20px;padding:16px 18px;box-shadow:var(--shadow);}
+    .avatar{width:90px;height:90px;border-radius:50%;overflow:hidden;position:relative;box-shadow:var(--shadow);}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:inherit;}
+    .name{font-size:1.7rem;font-weight:900;margin:0;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;color:transparent;}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+    .tag{font-size:.86rem;padding:6px 12px;border-radius:999px;background:linear-gradient(120deg,#ede9fe,#e0f2fe);color:#111;border:1px solid var(--line);}
+    .actions{display:flex;gap:10px;}
+    .btn{padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700;border:1px solid var(--line);box-shadow:var(--shadow);}
+    .btn.primary{background:linear-gradient(120deg,var(--brand),var(--brand2));color:white;border:none;}
+    .ribbon{height:6px;width:100%;background:linear-gradient(90deg,var(--brand),var(--brand2),var(--brand3));border-radius:999px;margin:8px 0 22px;}
+    .grid{display:grid;grid-template-columns:330px 1fr;gap:24px;}
+    aside,main{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:22px;}
+    @media(max-width:900px){.grid{grid-template-columns:1fr;}}
+    h2{font-size:1.18rem;margin:0 0 12px;position:relative;padding-bottom:6px;}
+    h2:after{content:"";position:absolute;left:0;bottom:0;width:160px;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand2),var(--brand3));opacity:.8;}
+    .item{padding:10px 0;border-bottom:1px dashed var(--line);}
+    .when{font-size:.86rem;color:var(--muted);}
+    .figure{text-align:center;margin:20px 0;}
+    .figure img{max-width:100%;border-radius:12px;box-shadow:var(--shadow);}
+    footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem;text-align:center;}
+    @media print{.bg-orbs,.actions,.ribbon{display:none;}}
   </style>
 </head>
-<body data-theme="light" itemscope itemtype="https://schema.org/Person" data-lang="zh">
-  <div class="bg-orbs" aria-hidden="true"></div>
 
+<body data-theme="light">
+  <div class="bg-orbs"></div>
   <div class="container">
     <header class="header">
       <section class="idcard">
         <div class="avatar">
-          <!-- 頭像：主路徑 + 備援 -->
-          <img
-            src="img/60131023.jpg"
-            alt="劉亭儀 大頭照"
-            loading="lazy"
-            decoding="async"
-            data-fallback="img/catpng.jpg"
-            onerror="fallbackImg(this)"
-            data-alt-zh="劉亭儀 大頭照"
-            data-alt-en="Ting-Yi Liu headshot"
-          >
+          <img src="img/60131023.jpg" alt="劉亭儀 大頭照" loading="lazy" decoding="async" data-fallback="img/catpng.jpg" onerror="fallbackImg(this)">
         </div>
         <div>
-          <h1 class="name" itemprop="name"
-              data-zh="劉亭儀"
-              data-en="Ting-Yi Liu">劉亭儀</h1>
-
-          <p class="role"
-             data-zh="心理學系學生｜亞洲大學 (Asia University)｜學號 "
-             data-en="Psychology Undergraduate｜Asia University｜Student ID ">
-            <span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong>
-          </p>
-
+          <h1 class="name">劉亭儀</h1>
+          <p>心理學系學生｜亞洲大學｜學號 113014056</p>
           <div class="meta">
-            <a class="tag" itemprop="email" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a>
-            <span class="tag" itemprop="affiliation" data-zh="亞洲大學心理學系" data-en="Dept. of Psychology, Asia University">亞洲大學心理學系</span>
-            <span class="tag" data-zh="台灣" data-en="Taiwan">Taiwan</span>
+            <a class="tag" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a>
+            <span class="tag">亞洲大學心理學系</span>
+            <span class="tag">Taiwan</span>
           </div>
         </div>
       </section>
 
       <div class="actions">
-        <button class="btn" id="themeBtn" title="切換深淺色" data-zh="🌗 主題" data-en="🌗 Theme">🌗 主題</button>
-        <button class="btn ghost" id="copyEmailBtn" title="複製信箱" data-zh="📧 複製信箱" data-en="📧 Copy Email">📧 複製信箱</button>
-        <button class="btn primary" onclick="window.print()" title="列印或匯出 PDF" data-zh="🖨️ 匯出PDF" data-en="🖨️ Export PDF">🖨️ 匯出PDF</button>
-
-        <!-- 語言切換 -->
-        <button class="btn" id="langZhBtn" aria-pressed="true">中</button>
-        <button class="btn" id="langEnBtn" aria-pressed="false">EN</button>
-        <!-- （可選）英文 PDF 下載位址，換成你的路徑 -->
-        <a class="btn ghost" id="pdfEn" href="resume-en.pdf" target="_blank" rel="noopener" data-zh="📄 英文版 PDF" data-en="📄 PDF (EN)">📄 英文版 PDF</a>
+        <button class="btn" id="themeBtn">🌗 主題</button>
+        <button class="btn ghost" id="copyEmailBtn">📧 複製信箱</button>
+        <!-- ❌ 已移除 PDF(EN) 按鈕 -->
+        <button class="btn primary" onclick="window.print()">🖨️ 匯出PDF</button>
       </div>
     </header>
 
-    <div class="ribbon" aria-hidden="true"></div>
+    <div class="ribbon"></div>
 
     <section class="grid">
-      <!-- 側欄 -->
       <aside>
-        <h2 data-zh="簡介 Summary" data-en="Summary">簡介 Summary</h2>
-        <p itemprop="description"
-           data-zh="對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。"
-           data-en="Interested in social-cognitive biases and empirical research design. I translate psychology into plain, teachable content and am building skills in methods, statistics, and data visualization.">
-          對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。
-        </p>
+        <h2>簡介 Summary</h2>
+        <p>對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。</p>
 
-        <h2 data-zh="聯絡 Contact" data-en="Contact">聯絡 Contact</h2>
-        <div class="kvs">
-          <div data-zh="學號" data-en="Student ID">學號</div><div>113014056</div>
-          <div>Email</div><div><a class="link" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a></div>
-          <div data-zh="系所" data-en="Department">系所</div><div data-zh="亞洲大學 心理學系" data-en="Asia University · Psychology">亞洲大學 心理學系</div>
-        </div>
+        <h2>技能 Skills</h2>
+        <p>統計、研究法、資料視覺化、中英翻譯、簡報設計。</p>
 
-        <h2 data-zh="技能 Skills" data-en="Skills">技能 Skills</h2>
-        <div>
-          <span class="pill" data-zh="基礎統計 (Statistics)" data-en="Basic Statistics">基礎統計 (Statistics)</span>
-          <span class="pill" data-zh="研究法 (Research Methods)" data-en="Research Methods">研究法 (Research Methods)</span>
-          <span class="pill" data-zh="R / Excel（基礎）" data-en="R / Excel (basic)">R / Excel（基礎）</span>
-          <span class="pill" data-zh="資料整理 & 視覺化" data-en="Data wrangling & visualization">資料整理 & 視覺化</span>
-          <span class="pill" data-zh="中英翻譯（學術 / 科普）" data-en="Chinese–English translation (academic / pop-sci)">中英翻譯（學術 / 科普）</span>
-          <span class="pill" data-zh="簡報設計" data-en="Presentation design">簡報設計</span>
-        </div>
-
-        <h2 data-zh="語言 Languages" data-en="Languages">語言 Languages</h2>
-        <p data-zh="中文（母語）、英文（中高階）" data-en="Chinese (native), English (upper-intermediate)">中文（母語）、英文（中高階）</p>
-
-        <h2 data-zh="興趣 Interests" data-en="Interests">興趣 Interests</h2>
-        <p data-zh="社會認知、情緒與大腦、學習心理、科普寫作、教育設計"
-           data-en="Social cognition; emotion & brain; learning psychology; science writing; instructional design">
-           社會認知、情緒與大腦、學習心理、科普寫作、教育設計
-        </p>
+        <h2>語言 Languages</h2>
+        <p>中文（母語）、英文（中高階）</p>
       </aside>
 
-      <!-- 內容主欄 -->
       <main>
         <section>
-          <h2 data-zh="學歷 Education" data-en="Education">學歷 Education</h2>
+          <h2>學歷 Education</h2>
           <div class="item">
-            <div class="row">
-              <h3 data-zh="亞洲大學｜心理學系 B.S." data-en="Asia University · B.S. in Psychology">亞洲大學｜心理學系 B.S.</h3>
-              <div class="when" data-zh="2024 — 至今" data-en="2024 — present">2024 — 至今</div>
-            </div>
-            <p data-zh="核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。"
-               data-en="Core courses: General Psychology, Research Methods, Statistics, Cognitive Psychology, Personality, Developmental, Psychological Testing.">
-               核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。
-            </p>
+            <h3>亞洲大學｜心理學系 B.S.</h3>
+            <div class="when">2024 — 至今</div>
           </div>
         </section>
 
         <section>
-          <h2 data-zh="學術 / 專題 Projects" data-en="Projects">學術 / 專題 Projects</h2>
-          <div class="item">
-            <div class="row">
-              <h3 data-zh="社會認知偏誤科普圖文" data-en="Popular-science posts on cognitive biases">社會認知偏誤科普圖文</h3>
-              <div class="when">2025</div>
-            </div>
-            <ul>
-              <li data-zh="以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。"
-                  data-en="Designed public-facing explainers on Confirmation Bias and Belief Perseverance.">
-                  以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。
-              </li>
-              <li data-zh="建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。"
-                  data-en="Created simple activity scripts to help readers turn empirical questions into testable hypotheses.">
-                  建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <div class="row">
-              <h3 data-zh="心理學小型測驗設計（團隊合作）" data-en="Mini scale design in psychology (team project)">心理學小型測驗設計（團隊合作）</h3>
-              <div class="when">2025</div>
-            </div>
-            <ul>
-              <li data-zh="嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。"
-                  data-en="Drafted items for “AI work anxiety” and “smartphone use” scales; practiced validity, reliability, and item analysis.">
-                  嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 裝飾相片（可留可刪） -->
-        <section>
-          <h2 data-zh="相片 Photo" data-en="Photo">相片 Photo</h2>
+          <h2>相片 Photo</h2>
           <figure class="figure">
-            <img
-              src="img/cat2png.jpg"
-              alt="貓咪按讚的照片"
-              loading="lazy"
-              decoding="async"
-              data-fallback="img/catpng.jpg"
-              onerror="fallbackImg(this)"
-              data-alt-zh="貓咪按讚的照片"
-              data-alt-en="Cat giving thumbs up"
-            >
-            <figcaption data-zh="今天也加油 👍" data-en="Keep going today 👍">今天也加油 👍</figcaption>
+            <img src="img/cat2png.jpg" alt="貓咪裝飾圖" loading="lazy" decoding="async">
+            <figcaption>今天也加油 👍</figcaption>
           </figure>
         </section>
 
         <section>
-          <h2 data-zh="經驗 Experience" data-en="Experience">經驗 Experience</h2>
+          <h2>經驗 Experience</h2>
           <div class="item">
-            <div class="row">
-              <h3 data-zh="學習助理（志工）｜心理學入門" data-en="Learning assistant (volunteer) · Intro to Psychology">學習助理（志工）｜心理學入門</h3>
-              <div class="when">2025</div>
-            </div>
+            <h3>學習助理（志工）｜心理學入門</h3>
+            <div class="when">2025</div>
             <ul>
-              <li data-zh="協助課內學弟妹複習重點、製作導學單張與簡報模板。"
-                  data-en="Helped juniors review key points; produced study guides and slide templates.">
-                  協助課內學弟妹複習重點、製作導學單張與簡報模板。
-              </li>
-              <li data-zh="以淺白比喻與小實驗提高理解度與參與度。"
-                  data-en="Used simple analogies and mini-experiments to boost understanding and engagement.">
-                  以淺白比喻與小實驗提高理解度與參與度。
-              </li>
+              <li>協助學弟妹複習重點與導學單張設計。</li>
+              <li>以比喻與小實驗提升理解與參與。</li>
             </ul>
           </div>
-        </section>
-
-        <section>
-          <h2 data-zh="課外與證書 Activities & Certificates" data-en="Activities & Certificates">課外與證書 Activities & Certificates</h2>
-          <ul>
-            <li data-zh="學術英文寫作工作坊（校內）" data-en="Academic English writing workshop (on campus)">學術英文寫作工作坊（校內）</li>
-            <li data-zh="資料視覺化工作坊（入門）" data-en="Data visualization workshop (intro)">資料視覺化工作坊（入門）</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 data-zh="可提供的合作 Collaboration" data-en="Collaboration">可提供的合作 Collaboration</h2>
-          <ul>
-            <li data-zh="心理學概念的通俗化寫作與編修" data-en="Plain-language writing and editing of psychology concepts">心理學概念的通俗化寫作與編修</li>
-            <li data-zh="基本資料整理、圖表製作與海報初稿" data-en="Basic data cleanup, charting, and poster drafts">基本資料整理、圖表製作與海報初稿</li>
-            <li data-zh="課堂活動設計（國高中與大學入門）" data-en="Classroom activity design (K–12 & intro college)">課堂活動設計（國高中與大學入門）</li>
-          </ul>
         </section>
       </main>
     </section>
   </div>
 
-  <footer class="container">
-    <p id="copyright"
-       data-zh="© {Y} 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。"
-       data-en="© {Y} Ting-Yi Liu · Single-file HTML (share or print to PDF).">
-       © <span id="year"></span> 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。
-    </p>
+  <footer>
+    <p>© <span id="year"></span> 劉亭儀 · 單檔 HTML，支援列印 PDF。</p>
   </footer>
 
   <script>
-    // 年份
-    const Y = new Date().getFullYear();
-    document.getElementById('year').textContent = Y;
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // 主題切換（記憶於 localStorage）
-    const root = document.body;
-    const themeBtn = document.getElementById('themeBtn');
-    const savedTheme = localStorage.getItem('theme');
-    if(savedTheme){ root.setAttribute('data-theme', savedTheme); }
-    themeBtn.addEventListener('click', ()=>{
-      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
+    const root=document.body;
+    const themeBtn=document.getElementById('themeBtn');
+    const saved=localStorage.getItem('theme');
+    if(saved) root.setAttribute('data-theme',saved);
+    themeBtn.addEventListener('click',()=>{
+      const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+      root.setAttribute('data-theme',next);
+      localStorage.setItem('theme',next);
     });
 
-    // 複製信箱 + 小煙火
-    const copyEmailBtn = document.getElementById('copyEmailBtn');
-    copyEmailBtn.addEventListener('click', async () => {
-      const email = 'tingyiliu07@gmail.com';
+    const copyEmailBtn=document.getElementById('copyEmailBtn');
+    copyEmailBtn.addEventListener('click',async()=>{
       try{
-        await navigator.clipboard.writeText(email);
-        copyEmailBtn.textContent = document.body.dataset.lang === 'en' ? '✅ Copied' : '✅ 已複製';
-        const r = copyEmailBtn.getBoundingClientRect();
-        burst(r.left + r.width/2, r.top + r.height/2);
-        setTimeout(()=>{
-          copyEmailBtn.textContent = document.body.dataset.lang === 'en' ? '📧 Copy Email' : '📧 複製信箱';
-        }, 1600);
-      }catch(err){
-        alert((document.body.dataset.lang === 'en' ? 'Unable to copy. Please select manually: ' : '無法複製，請手動選取：') + email);
-      }
+        await navigator.clipboard.writeText('tingyiliu07@gmail.com');
+        copyEmailBtn.textContent='✅ 已複製';
+        setTimeout(()=>copyEmailBtn.textContent='📧 複製信箱',1600);
+      }catch{alert('請手動複製');}
     });
 
-    // 小煙火
-    function burst(x, y){
-      const c = document.createElement('canvas');
-      const dpr = window.devicePixelRatio || 1;
-      c.width = innerWidth * dpr; c.height = innerHeight * dpr; c.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:99';
-      document.body.appendChild(c);
-      const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
-      const parts = Array.from({length: 60}, () => ({
-        x, y, r: Math.random()*4+2, a: 1,
-        vx: (Math.random()-0.5)*6, vy: (Math.random()-0.8)*8-4,
-        color: `hsl(${Math.random()*360},85%,60%)`
-      }));
-      const tick = () => {
-        ctx.clearRect(0,0,innerWidth,innerHeight);
-        parts.forEach(p=>{
-          p.x += p.vx; p.y += p.vy; p.vy += 0.15; p.a -= 0.015;
-          ctx.globalAlpha = Math.max(p.a,0);
-          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fillStyle = p.color; ctx.fill();
-        });
-        if(parts.some(p=>p.a>0)) requestAnimationFrame(tick); else c.remove();
-      };
-      tick();
-    }
-
-    // 滑鼠光暈效果（按鈕）
-    document.querySelectorAll('.btn').forEach(btn=>{
-      btn.addEventListener('pointermove', e=>{
-        const r = e.currentTarget.getBoundingClientRect();
-        e.currentTarget.style.setProperty('--x', `${e.clientX - r.left}px`);
-        e.currentTarget.style.setProperty('--y', `${e.clientY - r.top}px`);
-      });
-    });
-
-    // 圖片備援
     function fallbackImg(img){
-      const tries = +(img.dataset.tries || 0);
-      const cands = [img.dataset.fallback, img.dataset.fallback2, img.dataset.fallback3].filter(Boolean);
-      if (tries < cands.length){ img.dataset.tries = tries + 1; img.src = cands[tries]; }
-      else { img.alt = (img.alt || 'image') + ' (failed to load)'; img.style.display = 'none'; }
-    }
-
-    // ===== 多語切換：讀 data-zh / data-en，把文本與部分屬性切換 =====
-    const langZhBtn = document.getElementById('langZhBtn');
-    const langEnBtn = document.getElementById('langEnBtn');
-
-    langZhBtn.addEventListener('click', ()=> setLang('zh'));
-    langEnBtn.addEventListener('click', ()=> setLang('en'));
-
-    // 初始從 localStorage 或 <html lang>
-    const savedLang = localStorage.getItem('lang');
-    setLang(savedLang || (document.documentElement.lang.startsWith('zh') ? 'zh' : 'en'));
-
-    function setLang(lang){
-      document.body.dataset.lang = lang;
-      document.documentElement.lang = (lang === 'en' ? 'en' : 'zh-Hant');
-      localStorage.setItem('lang', lang);
-      langZhBtn.setAttribute('aria-pressed', lang==='zh');
-      langEnBtn.setAttribute('aria-pressed', lang==='en');
-
-      // 換文本（有 data-zh/en 的元素）
-      const nodes = document.querySelectorAll('[data-zh],[data-en]');
-      nodes.forEach(el=>{
-        const zh = el.getAttribute('data-zh');
-        const en = el.getAttribute('data-en');
-        const next = (lang === 'en' ? (en ?? zh) : (zh ?? en));
-        if(next != null){
-          // {Y} 佔位符替換年份
-          const text = next.replaceAll('{Y}', String(Y));
-          // 如果是 <meta> 的 content
-          if(el.tagName === 'META' && el.hasAttribute('content')){
-            el.setAttribute('content', text);
-          }else{
-            el.textContent = text;
-          }
-        }
-      });
-
-      // 換 alt/title 等屬性（使用 data-alt-zh/en、data-title-zh/en）
-      document.querySelectorAll('[data-alt-zh],[data-alt-en]').forEach(el=>{
-        const zh = el.getAttribute('data-alt-zh');
-        const en = el.getAttribute('data-alt-en');
-        el.setAttribute('alt', lang==='en' ? (en ?? zh ?? '') : (zh ?? en ?? ''));
-      });
-      document.querySelectorAll('[data-title-zh],[data-title-en]').forEach(el=>{
-        const zh = el.getAttribute('data-title-zh');
-        const en = el.getAttribute('data-title-en');
-        el.setAttribute('title', lang==='en' ? (en ?? zh ?? '') : (zh ?? en ?? ''));
-      });
-
-      // 角色列（含學號粗體）的細節：把固定片段一起翻
-      const role = document.querySelector('.role');
-      if(role){
-        const strong = role.querySelector('strong[itemprop="identifier"]');
-        const idText = strong ? strong.textContent.trim() : '';
-        role.textContent = (lang==='en'
-          ? `Psychology Undergraduate｜Asia University｜Student ID ${idText}`
-          : `心理學系學生｜亞洲大學 (Asia University)｜學號 ${idText}`);
-        if(strong){
-          // 把學號再包回 <strong>
-          const strongEl = document.createElement('strong');
-          strongEl.setAttribute('itemprop','identifier');
-          strongEl.textContent = idText;
-          role.appendChild(document.createTextNode(''));
-          // 將 Student ID/學號後半重新處理：簡易做法已直接放入 role.textContent（足夠）
-        }
-      }
-
-      // 依語言切換 PDF 連結顯示文字（文字已在 data-zh/en 覆蓋，這裡可略）
-      // 依語言調整 og:title / og:description（上面已處理 data- 屬性）
-      // 完成
+      const fb=img.dataset.fallback;
+      if(fb && img.src!==fb) img.src=fb;
+      else img.style.display='none';
     }
   </script>
-
-  <!-- （可選）Plausible Analytics：替換你的網域後解除註解即可
-  <script defer data-domain="tingyiliu07-png.github.io" src="https://plausible.io/js/script.js"></script>
-  -->
 </body>
 </html>
 

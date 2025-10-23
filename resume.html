@@ -3,39 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>劉亭儀｜履歷 (Resume)</title>
-  <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷。研究興趣：社會認知偏誤、學習與動機。">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://tingyiliu07-png.github.io/resume/">
-
-  <!-- Open Graph / Twitter Card -->
+  <title data-zh="劉亭儀｜履歷 (Resume)" data-en="Ting-Yi Liu｜Resume">劉亭儀｜履歷 (Resume)</title>
+  <meta name="description" content="劉亭儀｜亞洲大學心理學系｜學生履歷" data-zh="劉亭儀｜亞洲大學心理學系｜學生履歷" data-en="Ting-Yi Liu｜Dept. of Psychology, Asia University｜Student resume" />
+  <!-- Open Graph / Twitter 預覽 -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Ting-Yi Liu Resume">
-  <meta property="og:title" content="劉亭儀｜履歷 (Resume)">
-  <meta property="og:description" content="亞洲大學心理學系學生｜研究興趣：社會認知偏誤、學習與動機。">
-  <meta property="og:url" content="https://tingyiliu07-png.github.io/resume/">
-  <meta property="og:image" content="https://tingyiliu07-png.github.io/resume/img/og-image.jpg">
-  <meta property="og:image:alt" content="劉亭儀 履歷 頁面預覽">
+  <meta property="og:title" content="劉亭儀｜履歷" data-zh="劉亭儀｜履歷" data-en="Ting-Yi Liu｜Resume">
+  <meta property="og:description" content="亞洲大學心理學系｜學生履歷" data-zh="亞洲大學心理學系｜學生履歷" data-en="Dept. of Psychology, Asia University｜Student Resume">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:url" content="">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="劉亭儀｜履歷 (Resume)">
-  <meta name="twitter:description" content="亞洲大學心理學系學生｜研究興趣：社會認知偏誤、學習與動機。">
-  <meta name="twitter:image" content="https://tingyiliu07-png.github.io/resume/img/og-image.jpg">
-
-  <!-- 顏色 / 檢索 -->
-  <meta name="theme-color" content="#7c3aed">
-  <meta name="robots" content="index,follow">
-
-  <!-- Favicon / Icons（請把檔案放進 /img/） -->
+  <!-- favicon（可替換檔案） -->
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-
-  <!-- Plausible（隱私友善分析） -->
-  <script defer data-domain="tingyiliu07-png.github.io" src="https://plausible.io/js/script.js"></script>
-  <!-- 若用 Umami（自行架設或雲端），改用下列註解解除並填入你的網域與 ID
-  <script async src="https://umami.yourdomain.com/script.js" data-website-id="YOUR-UMAMI-ID"></script>
-  -->
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
   <style>
     :root{
@@ -70,19 +49,16 @@
       --line:#1f2a44;
       --shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
     }
-
     html,body{height:100%}
     body{
       margin:0; background:var(--bg); color:var(--text);
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       line-height:1.6; position:relative; overflow-x:hidden;
     }
-
-    /* 背景彩霧 */
     .bg-orbs{position:fixed; inset:-10% -10% -10% -10%; z-index:-1; pointer-events:none; background:var(--bg-accent);}  
 
     .container{max-width:1040px;margin:36px auto;padding:0 20px;}
-    .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px; position:relative;}
+    .header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
 
     .idcard{
       display:flex;gap:18px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,.8), rgba(255,255,255,.9));
@@ -92,7 +68,6 @@
     }
     .idcard:before{content:""; position:absolute; inset:0; border-radius:20px; padding:1px; background:linear-gradient(120deg, var(--brand), var(--brand2), var(--brand3)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude;}
 
-    /* 頭像樣式 */
     .avatar{
       width:90px; height:90px; border-radius:50%;
       display:grid; place-items:center; font-weight:800; color:var(--brand2);
@@ -104,30 +79,10 @@
       background:conic-gradient(from 0deg, var(--brand), var(--brand2), var(--brand3), var(--brand));
       z-index:-1; animation:spin 6s linear infinite;
     }
-    .avatar img{
-      width:100%; height:100%;
-      border-radius:inherit; object-fit:cover; display:block;
-    }
+    .avatar img{ width:100%; height:100%; border-radius:inherit; object-fit:cover; display:block; }
 
-    /* 右上角裝飾圖（小尺寸隱藏） */
-    .corner-photo{
-      position:absolute; right:0; top:-6px; opacity:.9;
-      transform: rotate(-2deg);
-    }
-    .corner-photo img{
-      width:150px; height:auto; border-radius:16px;
-      border:1px solid var(--line); box-shadow:var(--shadow);
-      display:block;
-    }
-    @media (max-width: 900px){ .corner-photo{ display:none } }
-
-    /* 單張照片（內文用） */
     .figure{ margin:14px 0 18px; text-align:center; }
-    .figure img{
-      max-width:100%; height:auto;
-      border-radius:12px; border:1px solid var(--line); box-shadow:var(--shadow);
-      display:block; margin-inline:auto;
-    }
+    .figure img{ max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line); box-shadow:var(--shadow); }
     .figure figcaption{ font-size:.9rem; color:var(--muted); margin-top:6px; }
 
     @keyframes spin{to{transform:rotate(1turn)}}
@@ -138,7 +93,7 @@
     .tag{font-size:.86rem;padding:6px 12px;border-radius:999px; background:linear-gradient(120deg, var(--brand-weak), #e0f2fe); color:#111; border:1px solid var(--line); box-shadow:0 2px 6px rgba(0,0,0,.05)}
 
     .actions{display:flex;gap:10px;flex-wrap:wrap;}
-    .btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--text); padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700; box-shadow:var(--shadow); position:relative; overflow:hidden; text-decoration:none; display:inline-flex; align-items:center; gap:6px;}
+    .btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--text); padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700; box-shadow:var(--shadow); position:relative; overflow:hidden}
     .btn.primary{background:linear-gradient(120deg,var(--brand),var(--brand2));border-color:transparent;color:white}
     .btn.ghost{background:transparent}
     .btn:active{transform:translateY(1px)}
@@ -178,66 +133,69 @@
 
     footer{max-width:1040px;margin:26px auto 52px;padding:0 20px;color:var(--muted);font-size:.92rem}
 
-    /* 列印優化 */
     @media print{
       body{background:white}
-      .bg-orbs, .actions, .avatar:before, .ribbon, .corner-photo{display:none}
+      .bg-orbs, .actions, .avatar:before, .ribbon{display:none}
       .container{margin:0;padding:0}
       .grid{grid-template-columns:1fr 2fr;gap:12px}
       aside,main{box-shadow:none;border-color:#ddd}
       a.link{color:#000;text-decoration:underline}
       h2:after{background:#000; opacity:.2}
     }
-    /* 無障礙：減少動態 */
     @media (prefers-reduced-motion: reduce){
       .avatar:before{animation:none}
       .pill:hover{transform:none}
     }
   </style>
 </head>
-<body data-theme="light" itemscope itemtype="https://schema.org/Person">
+<body data-theme="light" itemscope itemtype="https://schema.org/Person" data-lang="zh">
   <div class="bg-orbs" aria-hidden="true"></div>
 
   <div class="container">
     <header class="header">
       <section class="idcard">
         <div class="avatar">
-          <!-- 頭像：主路徑 + 備援（先放 img/60131023.jpg；失敗則改用 img/catpng.jpg） -->
+          <!-- 頭像：主路徑 + 備援 -->
           <img
             src="img/60131023.jpg"
             alt="劉亭儀 大頭照"
-            loading="lazy" decoding="async"
+            loading="lazy"
+            decoding="async"
             data-fallback="img/catpng.jpg"
-            onerror="fallbackImg(this)">
+            onerror="fallbackImg(this)"
+            data-alt-zh="劉亭儀 大頭照"
+            data-alt-en="Ting-Yi Liu headshot"
+          >
         </div>
         <div>
-          <h1 class="name" itemprop="name">劉亭儀</h1>
-          <p class="role"><span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong></p>
+          <h1 class="name" itemprop="name"
+              data-zh="劉亭儀"
+              data-en="Ting-Yi Liu">劉亭儀</h1>
+
+          <p class="role"
+             data-zh="心理學系學生｜亞洲大學 (Asia University)｜學號 "
+             data-en="Psychology Undergraduate｜Asia University｜Student ID ">
+            <span itemprop="jobTitle">心理學系學生</span>｜亞洲大學 (Asia University)｜學號 <strong itemprop="identifier">113014056</strong>
+          </p>
+
           <div class="meta">
             <a class="tag" itemprop="email" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a>
-            <span class="tag" itemprop="affiliation">亞洲大學心理學系</span>
-            <span class="tag">Taiwan</span>
+            <span class="tag" itemprop="affiliation" data-zh="亞洲大學心理學系" data-en="Dept. of Psychology, Asia University">亞洲大學心理學系</span>
+            <span class="tag" data-zh="台灣" data-en="Taiwan">Taiwan</span>
           </div>
         </div>
       </section>
 
       <div class="actions">
-        <button class="btn" id="themeBtn" title="切換深淺色">🌗 主題</button>
-        <button class="btn ghost" id="copyEmailBtn" title="複製信箱">📧 複製信箱</button>
-        <button class="btn primary" onclick="window.print()" title="列印或匯出 PDF">🖨️ 匯出PDF</button>
+        <button class="btn" id="themeBtn" title="切換深淺色" data-zh="🌗 主題" data-en="🌗 Theme">🌗 主題</button>
+        <button class="btn ghost" id="copyEmailBtn" title="複製信箱" data-zh="📧 複製信箱" data-en="📧 Copy Email">📧 複製信箱</button>
+        <button class="btn primary" onclick="window.print()" title="列印或匯出 PDF" data-zh="🖨️ 匯出PDF" data-en="🖨️ Export PDF">🖨️ 匯出PDF</button>
 
-        <!-- 語言切換 + 英文 PDF -->
-        <button class="btn ghost" id="langZhBtn" title="切換中文">中</button>
-        <button class="btn ghost" id="langEnBtn" title="Switch to English">EN</button>
-        <a class="btn" href="resume-en.pdf" target="_blank" rel="noopener" title="Download English PDF">📄 English PDF</a>
-      </div>
-
-      <!-- 右上角裝飾圖（找不到就自動改用 catpng.jpg） -->
-      <div class="corner-photo" aria-hidden="true">
-        <img src="img/cat2png.jpg" alt="裝飾照片"
-             loading="lazy" decoding="async"
-             data-fallback="img/catpng.jpg"
-             onerror="fallbackImg(this)">
+        <!-- 語言切換 -->
+        <button class="btn" id="langZhBtn" aria-pressed="true">中</button>
+        <button class="btn" id="langEnBtn" aria-pressed="false">EN</button>
+        <!-- （可選）英文 PDF 下載位址，換成你的路徑 -->
+        <a class="btn ghost" id="pdfEn" href="resume-en.pdf" target="_blank" rel="noopener" data-zh="📄 英文版 PDF" data-en="📄 PDF (EN)">📄 英文版 PDF</a>
       </div>
     </header>
 
@@ -246,112 +204,140 @@
     <section class="grid">
       <!-- 側欄 -->
       <aside>
-        <h2 data-i18n="summary_h2">簡介 Summary</h2>
-        <p itemprop="description">對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。</p>
+        <h2 data-zh="簡介 Summary" data-en="Summary">簡介 Summary</h2>
+        <p itemprop="description"
+           data-zh="對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。"
+           data-en="Interested in social-cognitive biases and empirical research design. I translate psychology into plain, teachable content and am building skills in methods, statistics, and data visualization.">
+          對社會認知偏誤與實徵研究設計有興趣，擅長將心理學知識轉譯為淺白內容與教學活動。正在累積研究方法、統計、與資料視覺化的能力。
+        </p>
 
-        <h2 data-i18n="contact_h2">聯絡 Contact</h2>
+        <h2 data-zh="聯絡 Contact" data-en="Contact">聯絡 Contact</h2>
         <div class="kvs">
-          <div>學號</div><div>113014056</div>
+          <div data-zh="學號" data-en="Student ID">學號</div><div>113014056</div>
           <div>Email</div><div><a class="link" href="mailto:tingyiliu07@gmail.com">tingyiliu07@gmail.com</a></div>
-          <div>系所</div><div>亞洲大學 心理學系</div>
+          <div data-zh="系所" data-en="Department">系所</div><div data-zh="亞洲大學 心理學系" data-en="Asia University · Psychology">亞洲大學 心理學系</div>
         </div>
 
-        <h2 data-i18n="skills_h2">技能 Skills</h2>
+        <h2 data-zh="技能 Skills" data-en="Skills">技能 Skills</h2>
         <div>
-          <span class="pill">基礎統計 (Statistics)</span>
-          <span class="pill">研究法 (Research Methods)</span>
-          <span class="pill">R / Excel（基礎）</span>
-          <span class="pill">資料整理 & 視覺化</span>
-          <span class="pill">中英翻譯（學術 / 科普）</span>
-          <span class="pill">簡報設計</span>
+          <span class="pill" data-zh="基礎統計 (Statistics)" data-en="Basic Statistics">基礎統計 (Statistics)</span>
+          <span class="pill" data-zh="研究法 (Research Methods)" data-en="Research Methods">研究法 (Research Methods)</span>
+          <span class="pill" data-zh="R / Excel（基礎）" data-en="R / Excel (basic)">R / Excel（基礎）</span>
+          <span class="pill" data-zh="資料整理 & 視覺化" data-en="Data wrangling & visualization">資料整理 & 視覺化</span>
+          <span class="pill" data-zh="中英翻譯（學術 / 科普）" data-en="Chinese–English translation (academic / pop-sci)">中英翻譯（學術 / 科普）</span>
+          <span class="pill" data-zh="簡報設計" data-en="Presentation design">簡報設計</span>
         </div>
 
-        <h2 data-i18n="languages_h2">語言 Languages</h2>
-        <p>中文（母語）、英文（中高階）</p>
+        <h2 data-zh="語言 Languages" data-en="Languages">語言 Languages</h2>
+        <p data-zh="中文（母語）、英文（中高階）" data-en="Chinese (native), English (upper-intermediate)">中文（母語）、英文（中高階）</p>
 
-        <h2 data-i18n="interests_h2">興趣 Interests</h2>
-        <p>社會認知、情緒與大腦、學習心理、科普寫作、教育設計</p>
+        <h2 data-zh="興趣 Interests" data-en="Interests">興趣 Interests</h2>
+        <p data-zh="社會認知、情緒與大腦、學習心理、科普寫作、教育設計"
+           data-en="Social cognition; emotion & brain; learning psychology; science writing; instructional design">
+           社會認知、情緒與大腦、學習心理、科普寫作、教育設計
+        </p>
       </aside>
 
       <!-- 內容主欄 -->
       <main>
         <section>
-          <h2 data-i18n="edu_h2">學歷 Education</h2>
+          <h2 data-zh="學歷 Education" data-en="Education">學歷 Education</h2>
           <div class="item">
             <div class="row">
-              <h3>亞洲大學｜心理學系 B.S.</h3>
-              <div class="when">2024 — 至今</div>
+              <h3 data-zh="亞洲大學｜心理學系 B.S." data-en="Asia University · B.S. in Psychology">亞洲大學｜心理學系 B.S.</h3>
+              <div class="when" data-zh="2024 — 至今" data-en="2024 — present">2024 — 至今</div>
             </div>
-            <p>核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。</p>
+            <p data-zh="核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。"
+               data-en="Core courses: General Psychology, Research Methods, Statistics, Cognitive Psychology, Personality, Developmental, Psychological Testing.">
+               核心課程：普通心理學、研究方法、統計學、認知心理、人格、發展、心理測驗。
+            </p>
           </div>
         </section>
 
         <section>
-          <h2 data-i18n="projects_h2">學術 / 專題 Projects</h2>
+          <h2 data-zh="學術 / 專題 Projects" data-en="Projects">學術 / 專題 Projects</h2>
           <div class="item">
             <div class="row">
-              <h3>社會認知偏誤科普圖文</h3>
+              <h3 data-zh="社會認知偏誤科普圖文" data-en="Popular-science posts on cognitive biases">社會認知偏誤科普圖文</h3>
               <div class="when">2025</div>
             </div>
             <ul>
-              <li>以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。</li>
-              <li>建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。</li>
+              <li data-zh="以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。"
+                  data-en="Designed public-facing explainers on Confirmation Bias and Belief Perseverance.">
+                  以「確認偏誤（Confirmation Bias）」與「信念恆存（Belief Perseverance）」為主題，設計面向大眾的解說貼文。
+              </li>
+              <li data-zh="建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。"
+                  data-en="Created simple activity scripts to help readers turn empirical questions into testable hypotheses.">
+                  建立簡易實作活動腳本，協助讀者把實徵問題轉為可檢驗的假設。
+              </li>
             </ul>
           </div>
           <div class="item">
             <div class="row">
-              <h3>心理學小型測驗設計（團隊合作）</h3>
+              <h3 data-zh="心理學小型測驗設計（團隊合作）" data-en="Mini scale design in psychology (team project)">心理學小型測驗設計（團隊合作）</h3>
               <div class="when">2025</div>
             </div>
             <ul>
-              <li>嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。</li>
+              <li data-zh="嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。"
+                  data-en="Drafted items for “AI work anxiety” and “smartphone use” scales; practiced validity, reliability, and item analysis.">
+                  嘗試設計「AI 工作焦慮」與「智慧型手機使用」相關量表題項，練習信效度概念與項目分析。
+              </li>
             </ul>
           </div>
         </section>
 
-        <!-- 相片區（貓咪按讚） -->
+        <!-- 裝飾相片（可留可刪） -->
         <section>
-          <h2 data-i18n="photo_h2">相片 Photo</h2>
+          <h2 data-zh="相片 Photo" data-en="Photo">相片 Photo</h2>
           <figure class="figure">
             <img
-              src="img/catpng.jpg"
+              src="img/cat2png.jpg"
               alt="貓咪按讚的照片"
-              loading="lazy" decoding="async"
-              data-fallback="img/cat2png.jpg"
-              data-fallback2="catpng.jpg"
-              onerror="fallbackImg(this)">
-            <figcaption>今天也加油 👍</figcaption>
+              loading="lazy"
+              decoding="async"
+              data-fallback="img/catpng.jpg"
+              onerror="fallbackImg(this)"
+              data-alt-zh="貓咪按讚的照片"
+              data-alt-en="Cat giving thumbs up"
+            >
+            <figcaption data-zh="今天也加油 👍" data-en="Keep going today 👍">今天也加油 👍</figcaption>
           </figure>
         </section>
 
         <section>
-          <h2 data-i18n="exp_h2">經驗 Experience</h2>
+          <h2 data-zh="經驗 Experience" data-en="Experience">經驗 Experience</h2>
           <div class="item">
             <div class="row">
-              <h3>學習助理（志工）｜心理學入門</h3>
+              <h3 data-zh="學習助理（志工）｜心理學入門" data-en="Learning assistant (volunteer) · Intro to Psychology">學習助理（志工）｜心理學入門</h3>
               <div class="when">2025</div>
             </div>
             <ul>
-              <li>協助課內學弟妹複習重點、製作導學單張與簡報模板。</li>
-              <li>以淺白比喻與小實驗提高理解度與參與度。</li>
+              <li data-zh="協助課內學弟妹複習重點、製作導學單張與簡報模板。"
+                  data-en="Helped juniors review key points; produced study guides and slide templates.">
+                  協助課內學弟妹複習重點、製作導學單張與簡報模板。
+              </li>
+              <li data-zh="以淺白比喻與小實驗提高理解度與參與度。"
+                  data-en="Used simple analogies and mini-experiments to boost understanding and engagement.">
+                  以淺白比喻與小實驗提高理解度與參與度。
+              </li>
             </ul>
           </div>
         </section>
 
         <section>
-          <h2 data-i18n="cert_h2">課外與證書 Activities & Certificates</h2>
+          <h2 data-zh="課外與證書 Activities & Certificates" data-en="Activities & Certificates">課外與證書 Activities & Certificates</h2>
           <ul>
-            <li>學術英文寫作工作坊（校內）</li>
-            <li>資料視覺化工作坊（入門）</li>
+            <li data-zh="學術英文寫作工作坊（校內）" data-en="Academic English writing workshop (on campus)">學術英文寫作工作坊（校內）</li>
+            <li data-zh="資料視覺化工作坊（入門）" data-en="Data visualization workshop (intro)">資料視覺化工作坊（入門）</li>
           </ul>
         </section>
 
         <section>
-          <h2 data-i18n="collab_h2">可提供的合作 Collaboration</h2>
+          <h2 data-zh="可提供的合作 Collaboration" data-en="Collaboration">可提供的合作 Collaboration</h2>
           <ul>
-            <li>心理學概念的通俗化寫作與編修</li>
-            <li>基本資料整理、圖表製作與海報初稿</li>
-            <li>課堂活動設計（國高中與大學入門）</li>
+            <li data-zh="心理學概念的通俗化寫作與編修" data-en="Plain-language writing and editing of psychology concepts">心理學概念的通俗化寫作與編修</li>
+            <li data-zh="基本資料整理、圖表製作與海報初稿" data-en="Basic data cleanup, charting, and poster drafts">基本資料整理、圖表製作與海報初稿</li>
+            <li data-zh="課堂活動設計（國高中與大學入門）" data-en="Classroom activity design (K–12 & intro college)">課堂活動設計（國高中與大學入門）</li>
           </ul>
         </section>
       </main>
@@ -359,12 +345,17 @@
   </div>
 
   <footer class="container">
-    <p>© <span id="year"></span> 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。</p>
+    <p id="copyright"
+       data-zh="© {Y} 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。"
+       data-en="© {Y} Ting-Yi Liu · Single-file HTML (share or print to PDF).">
+       © <span id="year"></span> 劉亭儀 · 此頁為單檔 HTML（可直接寄送或列印為 PDF）。
+    </p>
   </footer>
 
   <script>
     // 年份
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const Y = new Date().getFullYear();
+    document.getElementById('year').textContent = Y;
 
     // 主題切換（記憶於 localStorage）
     const root = document.body;
@@ -372,38 +363,38 @@
     const savedTheme = localStorage.getItem('theme');
     if(savedTheme){ root.setAttribute('data-theme', savedTheme); }
     themeBtn.addEventListener('click', ()=>{
-      const current = root.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
     });
 
-    // 複製信箱 + 動畫
+    // 複製信箱 + 小煙火
     const copyEmailBtn = document.getElementById('copyEmailBtn');
     copyEmailBtn.addEventListener('click', async () => {
       const email = 'tingyiliu07@gmail.com';
       try{
         await navigator.clipboard.writeText(email);
-        copyEmailBtn.textContent = '✅ 已複製';
-        setTimeout(()=> copyEmailBtn.textContent = '📧 複製信箱', 1600);
+        copyEmailBtn.textContent = document.body.dataset.lang === 'en' ? '✅ Copied' : '✅ 已複製';
+        const r = copyEmailBtn.getBoundingClientRect();
+        burst(r.left + r.width/2, r.top + r.height/2);
+        setTimeout(()=>{
+          copyEmailBtn.textContent = document.body.dataset.lang === 'en' ? '📧 Copy Email' : '📧 複製信箱';
+        }, 1600);
       }catch(err){
-        alert('無法複製，請手動選取：' + email);
+        alert((document.body.dataset.lang === 'en' ? 'Unable to copy. Please select manually: ' : '無法複製，請手動選取：') + email);
       }
     });
 
-    // 互動燦花：複製成功時撒花
-    const burst = (x, y) => {
+    // 小煙火
+    function burst(x, y){
       const c = document.createElement('canvas');
       const dpr = window.devicePixelRatio || 1;
       c.width = innerWidth * dpr; c.height = innerHeight * dpr; c.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:99';
       document.body.appendChild(c);
       const ctx = c.getContext('2d'); ctx.scale(dpr, dpr);
       const parts = Array.from({length: 60}, () => ({
-        x, y,
-        r: Math.random()*4+2,
-        a: 1,
-        vx: (Math.random()-0.5)*6,
-        vy: (Math.random()-0.8)*8-4,
+        x, y, r: Math.random()*4+2, a: 1,
+        vx: (Math.random()-0.5)*6, vy: (Math.random()-0.8)*8-4,
         color: `hsl(${Math.random()*360},85%,60%)`
       }));
       const tick = () => {
@@ -416,11 +407,7 @@
         if(parts.some(p=>p.a>0)) requestAnimationFrame(tick); else c.remove();
       };
       tick();
-    };
-    copyEmailBtn.addEventListener('click', (e)=>{
-      const r = e.currentTarget.getBoundingClientRect();
-      burst(r.left + r.width/2, r.top + r.height/2);
-    });
+    }
 
     // 滑鼠光暈效果（按鈕）
     document.querySelectorAll('.btn').forEach(btn=>{
@@ -431,93 +418,92 @@
       });
     });
 
-    // 通用圖片備援：依序嘗試 data-fallback, data-fallback2, data-fallback3
+    // 圖片備援
     function fallbackImg(img){
       const tries = +(img.dataset.tries || 0);
-      const candidates = [img.dataset.fallback, img.dataset.fallback2, img.dataset.fallback3].filter(Boolean);
-      if (tries < candidates.length){
-        img.dataset.tries = tries + 1;
-        img.src = candidates[tries];
-      }else{
-        img.alt = (img.alt || '圖片') + '（載入失敗）';
-        img.style.display = 'none';
-      }
+      const cands = [img.dataset.fallback, img.dataset.fallback2, img.dataset.fallback3].filter(Boolean);
+      if (tries < cands.length){ img.dataset.tries = tries + 1; img.src = cands[tries]; }
+      else { img.alt = (img.alt || 'image') + ' (failed to load)'; img.style.display = 'none'; }
     }
 
-    // === 簡易 i18n：字典 ===
-    const I18N = {
-      zh: {
-        name: "劉亭儀",
-        role_line: "心理學系學生｜亞洲大學 (Asia University)｜學號 113014056",
-        summary_h2: "簡介 Summary",
-        contact_h2: "聯絡 Contact",
-        skills_h2: "技能 Skills",
-        languages_h2: "語言 Languages",
-        interests_h2: "興趣 Interests",
-        edu_h2: "學歷 Education",
-        projects_h2: "學術 / 專題 Projects",
-        photo_h2: "相片 Photo",
-        exp_h2: "經驗 Experience",
-        cert_h2: "課外與證書 Activities & Certificates",
-        collab_h2: "可提供的合作 Collaboration",
-        email_btn: "📧 複製信箱",
-        theme_btn: "🌗 主題",
-        print_btn: "🖨️ 匯出PDF"
-      },
-      en: {
-        name: "Ting-Yi Liu",
-        role_line: "Psychology Undergraduate｜Asia University｜Student ID 113014056",
-        summary_h2: "Summary",
-        contact_h2: "Contact",
-        skills_h2: "Skills",
-        languages_h2: "Languages",
-        interests_h2: "Interests",
-        edu_h2: "Education",
-        projects_h2: "Projects",
-        photo_h2: "Photo",
-        exp_h2: "Experience",
-        cert_h2: "Activities & Certificates",
-        collab_h2: "Collaboration",
-        email_btn: "📧 Copy Email",
-        theme_btn: "🌗 Theme",
-        print_btn: "🖨️ Print/PDF"
-      }
-    };
+    // ===== 多語切換：讀 data-zh / data-en，把文本與部分屬性切換 =====
+    const langZhBtn = document.getElementById('langZhBtn');
+    const langEnBtn = document.getElementById('langEnBtn');
 
-    function applyLang(lang){
-      const dict = I18N[lang] || I18N.zh;
-      document.querySelectorAll("[data-i18n]").forEach(el=>{
-        const key = el.getAttribute("data-i18n");
-        if (dict[key]) el.textContent = dict[key];
-      });
-      const nameEl = document.querySelector('[itemprop="name"]');
-      const roleEl = document.querySelector('.role');
-      if (nameEl && dict.name) nameEl.textContent = dict.name;
-      if (roleEl && dict.role_line) roleEl.textContent = dict.role_line;
+    langZhBtn.addEventListener('click', ()=> setLang('zh'));
+    langEnBtn.addEventListener('click', ()=> setLang('en'));
 
-      const themeBtn = document.getElementById('themeBtn');
-      const copyEmailBtn = document.getElementById('copyEmailBtn');
-      const printBtn = document.querySelector('.btn.primary[onclick*="print"]');
-      if (themeBtn) themeBtn.textContent = dict.theme_btn;
-      if (copyEmailBtn) copyEmailBtn.textContent = dict.email_btn;
-      if (printBtn) printBtn.textContent = dict.print_btn;
+    // 初始從 localStorage 或 <html lang>
+    const savedLang = localStorage.getItem('lang');
+    setLang(savedLang || (document.documentElement.lang.startsWith('zh') ? 'zh' : 'en'));
 
+    function setLang(lang){
+      document.body.dataset.lang = lang;
+      document.documentElement.lang = (lang === 'en' ? 'en' : 'zh-Hant');
       localStorage.setItem('lang', lang);
-      document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'zh-Hant');
+      langZhBtn.setAttribute('aria-pressed', lang==='zh');
+      langEnBtn.setAttribute('aria-pressed', lang==='en');
+
+      // 換文本（有 data-zh/en 的元素）
+      const nodes = document.querySelectorAll('[data-zh],[data-en]');
+      nodes.forEach(el=>{
+        const zh = el.getAttribute('data-zh');
+        const en = el.getAttribute('data-en');
+        const next = (lang === 'en' ? (en ?? zh) : (zh ?? en));
+        if(next != null){
+          // {Y} 佔位符替換年份
+          const text = next.replaceAll('{Y}', String(Y));
+          // 如果是 <meta> 的 content
+          if(el.tagName === 'META' && el.hasAttribute('content')){
+            el.setAttribute('content', text);
+          }else{
+            el.textContent = text;
+          }
+        }
+      });
+
+      // 換 alt/title 等屬性（使用 data-alt-zh/en、data-title-zh/en）
+      document.querySelectorAll('[data-alt-zh],[data-alt-en]').forEach(el=>{
+        const zh = el.getAttribute('data-alt-zh');
+        const en = el.getAttribute('data-alt-en');
+        el.setAttribute('alt', lang==='en' ? (en ?? zh ?? '') : (zh ?? en ?? ''));
+      });
+      document.querySelectorAll('[data-title-zh],[data-title-en]').forEach(el=>{
+        const zh = el.getAttribute('data-title-zh');
+        const en = el.getAttribute('data-title-en');
+        el.setAttribute('title', lang==='en' ? (en ?? zh ?? '') : (zh ?? en ?? ''));
+      });
+
+      // 角色列（含學號粗體）的細節：把固定片段一起翻
+      const role = document.querySelector('.role');
+      if(role){
+        const strong = role.querySelector('strong[itemprop="identifier"]');
+        const idText = strong ? strong.textContent.trim() : '';
+        role.textContent = (lang==='en'
+          ? `Psychology Undergraduate｜Asia University｜Student ID ${idText}`
+          : `心理學系學生｜亞洲大學 (Asia University)｜學號 ${idText}`);
+        if(strong){
+          // 把學號再包回 <strong>
+          const strongEl = document.createElement('strong');
+          strongEl.setAttribute('itemprop','identifier');
+          strongEl.textContent = idText;
+          role.appendChild(document.createTextNode(''));
+          // 將 Student ID/學號後半重新處理：簡易做法已直接放入 role.textContent（足夠）
+        }
+      }
+
+      // 依語言切換 PDF 連結顯示文字（文字已在 data-zh/en 覆蓋，這裡可略）
+      // 依語言調整 og:title / og:description（上面已處理 data- 屬性）
+      // 完成
     }
-
-    // 初始化語言
-    (function initLang(){
-      const saved = localStorage.getItem('lang') || 'zh';
-      applyLang(saved);
-    })();
-
-    // 綁定中/英按鈕
-    document.getElementById('langZhBtn')?.addEventListener('click', ()=>applyLang('zh'));
-    document.getElementById('langEnBtn')?.addEventListener('click', ()=>applyLang('en'));
   </script>
+
+  <!-- （可選）Plausible Analytics：替換你的網域後解除註解即可
+  <script defer data-domain="tingyiliu07-png.github.io" src="https://plausible.io/js/script.js"></script>
+  -->
 </body>
 </html>
+
 
 
 
